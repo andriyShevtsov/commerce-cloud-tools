@@ -11,7 +11,7 @@ Cloud Docker for Commerce provides a separate container to handle Xdebug request
 
 If you use Microsoft Windows, take the following steps before continuing:
 
-1. Open your Docker settings.
+1. Open **UICONTROL Settings** from the Docker menu or Docker Dashboard.
 1. Select the **Expose daemon on tcp://localhost:2375 without TLS** checkbox.
 1. Wait for the settings to apply.
 
@@ -20,7 +20,7 @@ If you use Microsoft Windows, take the following steps before continuing:
 1. To enable Xdebug for your Docker environment, generate the Docker Compose configuration file in developer mode with the `--with-xdebug` option and any other required options, for example.
 
    ```bash
-   vendor/bin/ece-docker build:compose --mode="developer" --sync-engine="mutagen" --with-xdebug
+   ./vendor/bin/ece-docker build:compose --mode="developer" --sync-engine="mutagen" --with-xdebug
    ```
 
    This command adds the Xdebug configuration to your `docker-compose.yml` file.
